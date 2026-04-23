@@ -1,0 +1,4 @@
+interface:
+  display_name: "CNKI Review Fixed (Local)"
+  short_description: "Run fixed CNKI review, then expand only if needed"
+  default_prompt: "Use $cnki-review-fixed-local to start with two CNKI result pages, judge whether the abstracts are sufficient, and continue with review-expand only if needed."
