@@ -10,7 +10,7 @@ $ErrorActionPreference = "Stop"
 
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 $VenvPython = Join-Path $ProjectRoot ".venv\Scripts\python.exe"
-$CliPath = Join-Path $ProjectRoot "cnki-codex-skills\_shared\cnki\cli.py"
+$CliPath = Join-Path $ProjectRoot "scripts\runtime\cnki\cli.py"
 
 if (-not (Test-Path $CliPath)) {
     throw "未找到 CLI: $CliPath"

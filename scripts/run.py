@@ -9,7 +9,7 @@ import sys
 import time
 from urllib.parse import urlparse
 
-ROOT = Path(__file__).resolve().parents[4]
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def ensure_project_python() -> None:
@@ -109,7 +109,7 @@ def ensure_cdp_ready() -> None:
 
 ensure_project_python()
 ensure_cdp_ready()
-sys.path.append(str(ROOT / "cnki-codex-skills" / "_shared" / "cnki"))
+sys.path.append(str(ROOT / "scripts" / "runtime" / "cnki"))
 
 from skill_wrapper import run_skill  # type: ignore  # noqa: E402
 

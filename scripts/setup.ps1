@@ -6,7 +6,7 @@ $ErrorActionPreference = "Stop"
 
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 $VenvDir = Join-Path $ProjectRoot ".venv"
-$RequirementsFile = Join-Path $ProjectRoot "cnki-codex-skills\requirements.txt"
+$RequirementsFile = Join-Path $ProjectRoot "requirements.txt"
 
 if (-not (Test-Path $RequirementsFile)) {
     throw "未找到依赖文件: $RequirementsFile"
